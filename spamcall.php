@@ -4,16 +4,17 @@ include '1.php';
 /*
     https://github.com/mry2/spamcall
 */
-
+clear
+echo $green "<==============================================>"
+figlet Kalkulator| lolcat
+echo $green "<==============================================>"
+sleep 1
 $init = new Bom();
 
-//Eksekusi Call/Sms Boomber (Limit 3x/Jam)
-
-echo "Nomor? (ex : 628xxxx)\nInput : ";
+echo "Silahkan isi (contoh : 628xxxx)\nMasukan Nomer => ";
 $a = trim(fgets(STDIN));
 $init->no = "$a";
-$init->type = 2; //Type 2 untuk telpon, Type 1 untuk sms
-//$init->no = "0895371761108"; //Nomer Hp tujuan
+$init->type = 2;
 
 if ($init->type == 1) {
 	for ($i=0; $i < 2; $i++) { 
