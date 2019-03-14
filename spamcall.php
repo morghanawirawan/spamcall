@@ -4,14 +4,10 @@ include '1.php';
 /*
     https://github.com/mry2/spamcall
 */
-clear
-echo $green "<==============================================>"
-figlet Kalkulator| lolcat
-echo $green "<==============================================>"
-sleep 1
+ 
 $init = new Bom();
 
-echo "Silahkan isi (contoh : 628xxxx)\nMasukan Nomer => ";
+echo "Silahkan isi (contoh : 628xxxx)\nMasukan Nomer Target ==> ";
 $a = trim(fgets(STDIN));
 $init->no = "$a";
 $init->type = 2;
